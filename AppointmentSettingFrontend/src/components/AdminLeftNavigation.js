@@ -25,9 +25,9 @@ class AdminLeftNavigation extends React.Component {
       <div
         class="flex flex-col w-64  px-4 py-8  border-r dark:bg-gray-800 dark:border-gray-600"
         style={{
-          width: "25%",
-          minHeight: "122vh",
-          backgroundColor: "Navy",
+          width: "20%",
+          minHeight: "155vh",
+          backgroundColor: "#5F8D4E",
         }}
       >
         <div class="flex flex-col justify-between flex-1 mt-6">
@@ -84,7 +84,7 @@ class AdminLeftNavigation extends React.Component {
 
             <a
               onClick={this.props.handleLogout}
-              class="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-200 transform rounded-md dark:text-gray-400 hover:bg-gray-500 dark:hover:bg-gray-400 dark:hover:text-gray-200 hover:bg-White-900"
+              class="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-200 transform rounded-md dark:text-gray-400 hover:bg-gray-500 dark:hover:bg-gray-400 dark:hover:text-gray-200 hover:bg-285430-900"
               href=""
             >
               <svg

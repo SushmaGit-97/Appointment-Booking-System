@@ -1,11 +1,8 @@
 package com.appointmentbooking.repository;
-
 import java.sql.Date;
 import java.util.List;
-
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-
 import com.appointmentbooking.entity.TimeSlot;
 
 
@@ -22,3 +19,6 @@ public interface TimeSlotRepository extends CrudRepository<TimeSlot, Long> {
 	void deleteAllByLocationId(Long locationId);
 	
 }
+
+
+

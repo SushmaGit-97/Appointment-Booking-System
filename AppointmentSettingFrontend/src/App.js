@@ -11,7 +11,10 @@ import NewLocation from "./components/NewLocation";
 function App() {
   return (
     <BrowserRouter>
-      <div className="flex flex-col min-h-screen">
+      <div
+        className="flex flex-col min-h-screen"
+        style={{ backgroundColor: "#FEFCF3" }}
+      >
         <Route path="/" component={UserLogin} exact></Route>
         <Route path="/userSignup" component={UserSignup}></Route>
         <Route path="/dashboardLayout" component={DashboardLayout}></Route>

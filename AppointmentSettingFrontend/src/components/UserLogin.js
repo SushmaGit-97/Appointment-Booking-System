@@ -5,7 +5,7 @@ import Alert from "@mui/material/Alert";
 import { withRouter } from "react-router";
 import axios from "axios";
 
-const baseUrl = "http://localhost:8080/appointmentBooking/loginUser";
+const baseUrl = "http://localhost:8080/appointmentBooking/Userlogin";
 class UserLogin extends React.Component {
   constructor(props) {
     super(props);
@@ -16,7 +16,6 @@ class UserLogin extends React.Component {
       shouldLoginErrorDisplay: false,
     };
   }
-
   handleUsernameChange = (e) => {
     this.setState({ username: e.target.value });
   };
@@ -68,15 +67,15 @@ class UserLogin extends React.Component {
     return (
       <div
         className="flex flex-col space-y-5 max-w-md mx-auto my-16 min-w-500"
-        style={{ backgroundColor: "white", padding: "30px", borderRadius: 10 }}
+        style={{
+          backgroundColor: "#F5EBE0",
+          padding: "30px",
+        }}
       >
         <div
           style={{
             color: "darkslategray",
-            display: "flex",
-            justifyContent: "center",
           }}
-          className="flex items-center justify-between"
         >
           <h1 className="text-4xl font-semibold  uppercase">
             Missouri Bank Login
@@ -85,12 +84,12 @@ class UserLogin extends React.Component {
         <TextField
           value={username}
           required
-          id="outlined-required"
+          //id="outlined-required"
           label="Username"
           onChange={(e) => this.handleUsernameChange(e)}
         />
         <TextField
-          id="outlined-password-input"
+          //id="outlined-password-input"
           required
           label="Password"
           type="password"
@@ -109,7 +108,7 @@ class UserLogin extends React.Component {
         </div>
         <button
           type="button"
-          class="text-white bg-gradient-to-r from-gray-500 via-gray-600 to-gray-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-gray-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 "
+          class="text-white bg-gradient-to-r from-gray-500 via-gray-600 to-gray-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-gray-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
           onClick={this.handleLogin}
         >
           Login

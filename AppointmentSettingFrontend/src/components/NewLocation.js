@@ -1,7 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router";
 import axios from "axios";
-
 import TextField from "@mui/material/TextField";
 import dayjs from "dayjs";
 import Stack from "@mui/material/Stack";
@@ -125,23 +124,20 @@ class NewLocation extends React.Component {
       serviceList,
     } = this.state;
     return (
-      <div
-        className=" flex flex-col"
-        style={{ backgroundColor: "aliceBlueBlue", minHeight: "100vh" }}
-      >
+      <div className=" flex flex-col">
         <div
           className=" flex flex-col"
           style={{ backgroundColor: "Cornsilk", minHeight: "100vh" }}
         >
           <div
             style={{
-              backgroundColor: "Tomato",
+              backgroundColor: "#285430",
               display: "flex",
               justifyContent: "center",
               padding: "15px",
               borderBottom: "5px solid white",
               fontSize: "40px",
-              color: "black",
+              color: "White",
             }}
           >
             LOCATION MANAGEMENT

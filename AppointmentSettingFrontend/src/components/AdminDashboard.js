@@ -4,7 +4,7 @@ import AdminLeftNavigation from "./AdminLeftNavigation";
 import axios from "axios";
 import { DataGrid, GridValueGetterParams } from "@mui/x-data-grid";
 
-const url = "http://localhost:8080/appointmentBooking/getAllBookingDetails";
+const url = "http://localhost:8080/appointmentBooking/getBookingDetails";
 class AdminDashboard extends React.Component {
   constructor(props) {
     super(props);
@@ -59,7 +59,7 @@ class AdminDashboard extends React.Component {
       {
         field: "bookingUserName",
         type: "string",
-        width: 200,
+        width: 115,
         renderHeader: () => (
           <strong>
             <span
@@ -76,7 +76,7 @@ class AdminDashboard extends React.Component {
       {
         field: "bookingPhoneNumber",
         type: "string",
-        width: 200,
+        width: 150,
         renderHeader: () => (
           <strong>
             <span
@@ -108,7 +108,7 @@ class AdminDashboard extends React.Component {
       {
         field: "locationName",
         type: "string",
-        width: 200,
+        width: 120,
         renderHeader: () => (
           <strong>
             <span
@@ -168,17 +168,22 @@ class AdminDashboard extends React.Component {
     return (
       <div
         className=" flex flex-col"
-        style={{ backgroundColor: "aliceBlueBlue", minHeight: "105vh" }}
+        style={{
+          backgroundColor: "aliceBlueBlue",
+          minHeight: "100vh",
+          position: "absolute",
+        }}
       >
         <div
           style={{
-            backgroundColor: "Tomato",
+            backgroundColor: "#285430",
+            width: 1630,
             display: "flex",
             justifyContent: "center",
             padding: "15px",
             borderBottom: "5px solid white",
             fontSize: "40px",
-            color: "black",
+            color: "White",
           }}
         >
           SCHEDULED APPOINTMENTS
@@ -193,7 +198,7 @@ class AdminDashboard extends React.Component {
             <DataGrid
               style={{
                 backgroundColor: "Cornsilk",
-                width: 1438,
+                width: 1350,
                 height: 1000,
                 position: "absolute",
               }}

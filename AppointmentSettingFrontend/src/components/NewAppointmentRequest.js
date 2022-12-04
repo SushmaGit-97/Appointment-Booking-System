@@ -9,9 +9,9 @@ import UserLeftNavigation from "./UserLeftNavigation";
 const getAllLocationUrl =
   "http://localhost:8080/appointmentBooking/getLocationList";
 const newAppointmentBookingUrl =
-  "http://localhost:8080/appointmentBooking/bookAppointment";
+  "http://localhost:8080/appointmentBooking/AppointmentBooking";
 const availableTimeSlotUrl =
-  "http://localhost:8080/appointmentBooking/availableTimeslot";
+  "http://localhost:8080/appointmentBooking/AvailableTimeslot";
 class NewAppointmentRequest extends React.Component {
   constructor(props) {
     super(props);
@@ -241,7 +241,7 @@ class NewAppointmentRequest extends React.Component {
         >
           <div
             style={{
-              backgroundColor: "blue",
+              backgroundColor: "#DBA39A",
               display: "flex",
               justifyContent: "center",
               padding: "12px",
@@ -263,7 +263,7 @@ class NewAppointmentRequest extends React.Component {
                 className="flex flex-col space-y-5 max-w-md mx-auto my-16 "
                 style={{
                   minWidth: "70%",
-                  backgroundColor: "white",
+                  backgroundColor: "#F0DBDB",
                   padding: "50px",
                   borderRadius: 20,
                   position: "absolute",

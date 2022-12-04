@@ -31,17 +31,19 @@ class DashboardLayout extends React.Component {
     return (
       <div
         className=" flex flex-col"
-        style={{ backgroundColor: "aliceBlueBlue", minHeight: "100vh" }}
+        style={{
+          minHeight: "100vh",
+        }}
       >
         <div
           style={{
-            backgroundColor: "blue",
+            backgroundColor: "#F0DBDB",
             display: "flex",
             justifyContent: "center",
             padding: "12px",
             borderBottom: "1px solid white",
             fontSize: "40px",
-            color: "white",
+            color: "#DBA39A",
           }}
         >
           WELCOME TO MISSOURI BANK
@@ -52,16 +54,16 @@ class DashboardLayout extends React.Component {
             handleViewHistory={this.handleViewHistory}
             handleLogout={this.handleLogout}
           />
-          <div className="flex flex-col relative w-full">
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                paddingTop: "50px",
-                fontSize: "50px",
-                color: "black",
-              }}
-            >
+          <div
+            className="flex flex-col relative w-full"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "black",
+            }}
+          >
+            <div>
               <h1>Please Proceed to Schedule your Appointment</h1>
             </div>
           </div>

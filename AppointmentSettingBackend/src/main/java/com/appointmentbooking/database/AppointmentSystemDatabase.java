@@ -1,15 +1,13 @@
 package com.appointmentbooking.database;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-
-public class CreateTablesAndSchema {
+public class AppointmentSystemDatabase {
 	
 	public static void main(String[] args) {
 		try(Connection conn = createNewDBconnection()){
-			createSchemaAndTables(conn);
+			AppointmentSystemDatabase(conn);
 			System.out.println("Tables and schema created");
 			conn.close();
 		}catch (SQLException e) {
@@ -17,7 +15,7 @@ public class CreateTablesAndSchema {
 		} 
 	}
 	
-	private static void createSchemaAndTables(Connection connection) {
+	private static void AppointmentSystemDatabase(Connection connection) {
 		try {
 			connection.prepareStatement("DROP SCHEMA if exists AppointmentBookingApp").execute();
 			PreparedStatement statement = connection.prepareStatement("CREATE DATABASE AppointmentBookingApp"); 
@@ -71,7 +69,6 @@ public class CreateTablesAndSchema {
 			connection.prepareStatement(createService).execute();
 			connection.prepareStatement(createTimeSlot).execute();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

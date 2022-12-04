@@ -5,7 +5,7 @@ import Alert from "@mui/material/Alert";
 import { withRouter } from "react-router";
 import axios from "axios";
 
-const baseUrl = "http://localhost:8080/appointmentBooking/registerUser";
+const baseUrl = "http://localhost:8080/appointmentBooking/UserRegistration";
 
 class UserSignup extends React.Component {
   constructor(props) {
@@ -123,7 +123,11 @@ class UserSignup extends React.Component {
     return (
       <div
         className="flex flex-col space-y-5 max-w-md mx-auto my-16 min-w-500"
-        style={{ backgroundColor: "white", padding: "30px", borderRadius: 10 }}
+        style={{
+          backgroundColor: "#F5EBE0",
+          padding: "30px",
+          borderRadius: 10,
+        }}
       >
         <h2
           style={{

@@ -1,17 +1,13 @@
 package com.appointmentbooking.entity;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
 import lombok.Data;
-
 @Table(name = "location")
 @Entity
 @Data
 public class Location {
-	
 	@Id
 	@GeneratedValue
 	private Long id;
@@ -55,7 +51,5 @@ public class Location {
 	}
 	public void setWeekendEndTime(int weekendEndTime) {
 		this.weekendEndTime = weekendEndTime;
-	}
-	
-
+	}	
 }

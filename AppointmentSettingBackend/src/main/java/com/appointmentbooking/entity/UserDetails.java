@@ -1,5 +1,7 @@
 package com.appointmentbooking.entity;
 
+import java.util.Optional;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -55,6 +57,29 @@ public class UserDetails {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	
+	public UserDetails registerUser(UserDetails userDetails) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	//
+	public UserDetails UserRegistration(UserDetails userDetails) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public UserDetails Userlogin(UserDetails userDetails) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public int getWeekdayInitialTime() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	public static Optional<UserDetails> findById(Long userId) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 
